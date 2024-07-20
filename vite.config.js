@@ -6,7 +6,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api/': {
-        target: 'http://localhost:5001/api/',
+        target: 'https://password-manager-backend-eu27.onrender.com/api/',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ''),
       },
