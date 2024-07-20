@@ -15,7 +15,6 @@ const LoginForm = () => {
     e.preventDefault();
     try {
       const response = await signIn(formData);
-      console.log(response);
       localStorage.setItem("token", response.data.token);
 
       navigate("/");
